@@ -315,6 +315,8 @@ logging.getLogger('').addHandler(console)
 
 cwd = os.getcwd()
 
+print cwd
+
 if not os.path.isfile(cwd + '\\config.yml'):
     print('No config file exists please edit the config.yml.example and input your 2captcha key')
     quit()

@@ -264,10 +264,9 @@ def mainprocess(captchakey, saveloc):
             try:
                 myElem = WebDriverWait(driver2, delay).until(EC.presence_of_element_located((By.XPATH, '//*[@id="mails"]/tbody/tr/td[1]/a')))
             except TimeoutException:
-                logging.info("No Email Yet 1 " + str(z + 1) + "/10")
+                logging.info("No Email Yet " + str(z + 1) + "/10")
                 driver2.refresh()
         except:
-            logging.info("No Email Yet 2 " + str(z + 1) + "/10")
             if z == 4:
                 logging.info("Can't Find the email sorries :(")
             continue

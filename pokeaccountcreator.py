@@ -315,8 +315,6 @@ logging.getLogger('').addHandler(console)
 
 cwd = os.getcwd()
 
-print cwd
-
 if not os.path.isfile(os.path.join(cwd, 'config.yml')):
     print('No config file exists please edit the config.yml.example and input your 2captcha key')
     quit()
@@ -326,8 +324,6 @@ else:
 
 captchakey = cfg['2captcha']['key']
 saveloc = cfg['savelocation']['directory']
-
-print saveloc
 
 if captchakey == '' or saveloc == '':
     print('Please enter your 2captchakey and save location into the config file')

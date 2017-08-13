@@ -1,0 +1,4 @@
+2captcha:
+    key: '' #enter your 2captcha key here
+savelocation:
+    directory: '' #enter the directory to save the details of the accounts to

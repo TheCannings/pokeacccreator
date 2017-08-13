@@ -292,7 +292,7 @@ def mainprocess(captchakey, saveloc):
 
     logging.info("Account created saving details")
 
-    with open(os.path.join(saveloc, 'accounts.txt', "a")) as myfile:
+    with open(os.path.join(saveloc, 'accounts.txt'), "a") as myfile:
         myfile.write("\n" + randomemail + ' - ' + randompass)
 
     logging.info(randomemail + " account created")

@@ -160,8 +160,6 @@ def mainprocess(captchakey, saveloc):
 
     randdate=datetime.date(randint(1975,1990), randint(1,12),randint(1,28))
 
-    logging.info("Birthdate set to " + datetime.datetime.strftime(randdate, '%Y-%m-%d'))
-
     elem = driver.find_element_by_name("dob") 
     elem.send_keys(datetime.datetime.strftime(randdate, '%Y-%m-%d'))  
 

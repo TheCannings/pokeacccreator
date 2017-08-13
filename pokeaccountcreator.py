@@ -292,7 +292,7 @@ def mainprocess(captchakey, saveloc):
 
     logging.info("Account created saving details")
 
-    with open(os.path.join(saveloc, 'accounts.txt', "a") as myfile:
+    with open(os.path.join(saveloc, 'accounts.txt', "a")) as myfile:
         myfile.write("\n" + randomemail + ' - ' + randompass)
 
     logging.info(randomemail + " account created")
@@ -317,7 +317,7 @@ cwd = os.getcwd()
 
 print cwd
 
-if not os.path.isfile(os.path.join(cwd, 'config.yml'):
+if not os.path.isfile(os.path.join(cwd, 'config.yml')):
     print('No config file exists please edit the config.yml.example and input your 2captcha key')
     quit()
 else:

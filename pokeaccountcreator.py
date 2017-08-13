@@ -327,6 +327,8 @@ else:
 captchakey = cfg['2captcha']['key']
 saveloc = cfg['savelocation']['directory']
 
+print saveloc
+
 if captchakey == '' or saveloc == '':
     print('Please enter your 2captchakey and save location into the config file')
 elif not os.path.isdir(saveloc):

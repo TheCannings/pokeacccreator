@@ -262,7 +262,7 @@ def mainprocess(captchakey, saveloc):
         try:
             delay = 60  # seconds
             try:
-                myElem = WebDriverWait(driver2, delay).until(EC.presence_of_element_located((By.XPATH, '//*[@id="mails"]/tbody/tr/td[3]/a/span')))
+                myElem = WebDriverWait(driver2, delay).until(EC.presence_of_element_located((By.XPATH, '//*[@id="mails"]/tbody')))
             except TimeoutException:
                 if z == 9:
                     logging.info("Can't Find the email sorries :(")

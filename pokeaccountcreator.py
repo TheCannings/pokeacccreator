@@ -347,5 +347,6 @@ for x in range(1, int(accountnum) + 1):
         logging.info("Starting Account number " + str(x) + "/" + str(accountnum))
         mainprocess(captchakey, saveloc)
     except Exception as e:
-        logging.info(e)
+        logging.info("Account Creation failed retrying")
+        x -= 1
         continue

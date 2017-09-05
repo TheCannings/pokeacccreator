@@ -188,7 +188,7 @@ def mainprocess(captchakey, saveloc):
     driver.find_element_by_xpath('//*[@id="sign-up-theme"]/section/div/div/div[1]/form/input[2]').click()
 
     randomemail = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
-    randompass = ''.join(random.SystemRandom().choice(string.ascii_lowercase + string.ascii_uppercase + string.digits + '!') for _ in range(10))
+    randompass = ''.join(random.SystemRandom().choice(string.ascii_lowercase + string.ascii_uppercase + string.digits + '!!!!££££$$$$') for _ in range(10))
 
     driver2 = PhantomJS(desired_capabilities=dcap, service_args=['--load-images=no'])
     driver2.set_window_size(1600, 1200)
